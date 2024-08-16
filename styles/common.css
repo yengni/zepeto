@@ -61,6 +61,7 @@ header .lnb .m_nav {
 header .lnb .m_nav span {
     display: block; width: 100%; height: 5px; background: #fff;
     position: absolute; left: 0;
+    z-index: 1000;
 }
 header .lnb .m_nav span:nth-child(1) {top: 0;}
 header .lnb .m_nav span:nth-child(2) {top: 40%;}
@@ -70,10 +71,16 @@ header .lnb .m_nav span:nth-child(3) {bottom: 0;}
 transform-origin: left top;}
 header .lnb .m_nav span:nth-child(2) {display: none;}
 header .lnb .m_nav span:nth-child(3) {transform: rotate(-45deg); transform-origin: left top;} */
-header .m_nav_wrap {display: none;}
-header .m_nav_wrap .gnb {}
-header .m_nav_wrap .gnb > li {}
-header .m_nav_wrap .gnb > li > a {}
-header .m_nav_wrap .gnb > li > .sub {}
-header .m_nav_wrap .gnb > li > .sub li {}
-header .m_nav_wrap .gnb > li > .sub li a {}
+header .m_nav_wrap {background: #222;
+position: fixed; right: 0; top: 0px; z-index: 999;}
+header .m_nav_wrap .gnb {
+    height: 890px; width: 600px;
+    margin: 135px 0 0 46px;
+}
+header .m_nav_wrap .gnb > li {margin-bottom: 92px;}
+header .m_nav_wrap .gnb > li > a {color: #fff;
+font-size: 1.25rem;}
+header .m_nav_wrap .gnb > li > .sub {margin-top: 20px;}
+header .m_nav_wrap .gnb > li > .sub li {line-height: 2;}
+header .m_nav_wrap .gnb > li > .sub li a {color: #fff;
+font-size: 0.9rem;}
