@@ -1,0 +1,24 @@
+main {}
+main .visual {position: relative; height: 80vh; overflow: hidden;}
+main .visual video {width: 1920px;} /* 화면크기 상관없이 영상크기가 고정되도록 */
+main .visual .txt {
+    position: absolute;
+    top: 25%; width: 100%;
+    text-align: center;
+}
+main .visual .txt h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 50px;
+    color: #fff;
+}
+main .visual .txt .start {
+    font-size: 1.44rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+    display: inline-block;
+}
