@@ -10,12 +10,12 @@
 * cs.html(메인-가이드-고객센터)
 ### 제작페이지 구성(css)
 * base.css (html 디자인 초기화)
-* common.css ()
-* main.css
-* responsive.css
+* common.css (header, footer 공통 디자인)
+* main.css (index.html의 메인 디자인)
+* responsive.css (반응형)
 ### 제작페이지 구성(js)
-* common.js
-* main.js
+* common.js (header, footer 동적구성)
+* main.js (index.html의 메인 동적)
 ### 작업 시 주의사항 check
 * mobile nav 제작 시 javascript 조건문 ~~~~ 주의사항 내용 기록
 * `code 붙여넣기`
